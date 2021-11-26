@@ -35,17 +35,12 @@ def make_grey_pictures():
     res.save(result_file)
 
 
-print("напишите раположение файла в полной форме")
-file = input()
-print("напишите раположение результирующего файла в полной форме")
-result_file = input()
+file = "C:\\Users\\122\\Desktop\\github\\Task\\img1.jpg"
+result_file = "C:\\Users\\122\\Desktop\\github\\Task\\img2.jpg"
 img_arr = array(Image.open(file))
 width_img = len(img_arr)
 height_img = len(img_arr[1])
-print("напишите ширину мозаики")
-width_mosaic = int(input())
-print("напишите высоту мозаики")
-height_mosaic = int(input())
-print("напишите шаг градации серого")
-grayrate_step = int(input())
+width_mosaic = 10
+height_mosaic = 10
+grayrate_step = 10
 make_grey_pictures()

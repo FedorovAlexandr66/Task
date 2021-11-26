@@ -62,7 +62,7 @@ width_img = len(img_arr)
 height_img = len(img_arr[1])
 width_mosaic = 10
 height_mosaic = 10
-grayrate_step = 10
+grayrate_step = 1
 make_grey_pictures()
 
 if __name__ == "__main__":
